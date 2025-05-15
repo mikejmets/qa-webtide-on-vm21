@@ -1,0 +1,37 @@
+[repository]
+name = "qa-webtide-on-vm21"
+managed_by_uv = false
+changelog = "CHANGELOG.md"
+version = "version.txt"
+compose = "docker-compose.yml"
+
+[repository.towncrier]
+section = "Project"
+settings = "towncrier.toml"
+
+[backend]
+path = "backend"
+
+[backend.package]
+name = "qa.webtide.on.vm21"
+path = "backend"
+changelog = "backend/CHANGELOG.md"
+towncrier_settings = "backend/pyproject.toml"
+base_package = "Products.CMFPlone"
+publish = false
+
+[frontend]
+path = "frontend"
+
+[frontend.package]
+name = "volto-qa-webtide-on-vm21"
+path = "frontend/packages/volto-qa-webtide-on-vm21"
+changelog = "frontend/packages/volto-qa-webtide-on-vm21/CHANGELOG.md"
+towncrier_settings = "frontend/packages/volto-qa-webtide-on-vm21/towncrier.toml"
+base_package = "@plone/volto"
+publish = false
+
+[cookieplone]
+template = "project"
+template_version = "27a6b7bd7b0ba9a77b04109d73c4ee975ab95cc3"
+generated_date = "2025-05-15 08:59:17"

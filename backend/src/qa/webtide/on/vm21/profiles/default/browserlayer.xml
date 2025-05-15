@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layers>
+  <layer interface="qa.webtide.on.vm21.interfaces.IBrowserLayer"
+         name="qa.webtide.on.vm21"
+  />
+</layers>
